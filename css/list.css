@@ -8,12 +8,11 @@
     z-index: 102;   
     background: #111;
 }
-h1{
+.title{
     position: relative;
     top: 75px;
     padding-top: 25px;
     right: 30px;
-    font-size: 96px;
     z-index: 101;
     display: inline-block;
     font-family: Kelly Slab;
@@ -30,11 +29,11 @@ h1{
     -ms-user-select: none;      
     user-select: none;    
 }
-h1:hover{
+.title:hover{
     transition: 1s;
     color:rgb(0, 162, 255);
 }
-h1:after {
+.title:after {
     transition: 1s;
     border-radius: 50%;
     content: '';
@@ -53,9 +52,24 @@ h1:after {
     z-index: 103;
 }
 
-h1:hover:after {
+.title:hover:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 53px;
+}
+h3{
+    font-size: 45px;
+}
+h4{
+    font-size: 42px;
+}
+h5{
+    font-size: 37px;
 }
