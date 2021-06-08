@@ -10,7 +10,7 @@ body{
     min-height: 100vh;
     background: #111;
     overflow: hidden;   
-    cursor: url('Cursor.png'), auto;
+    cursor: url('../assets/Cursor.png'), auto;
 }
 
 .hexagon{

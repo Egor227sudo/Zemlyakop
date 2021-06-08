@@ -1,4 +1,4 @@
-('#elm').hover(
-    function(){ $(this).addClass('hover') },
-    function(){ $(this).removeClass('hover') }
+$('#h1').hover(
+    function(){ $(this).addClass('animate__animated animate__pulse') },
+    function(){ $(this).removeClass('animate__animated animate__pulse') }
 );
