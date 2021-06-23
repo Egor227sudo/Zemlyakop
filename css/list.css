@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gagalin');
 *{
     margin: 0;
     padding: 0;
@@ -9,18 +9,19 @@
 
 body{
     min-height: 100vh;
-    background: #111;
+    /* background: rgb(255, 255, 255); */
+    background: url(../assets/image.png);
     overflow: hidden;   
-    cursor: url('../assets/Cursor.png'), auto;
 }
 
 .list{
     position: absolute;
     height: 100vh;
-    width: 726px;
+    width: 490px;
     right: 0;
     text-align: right;
-    z-index: 102;   
+    z-index: 110;   
+    letter-spacing: 2px;
     background: #111;
 }
 .title{
@@ -30,7 +31,7 @@ body{
     right: 30px;
     z-index: 101;
     display: inline-block;
-    font-family: Kelly Slab;
+    font-family: Gagalin;
     font-style: normal;
     font-weight: normal;
     cursor: pointer;
@@ -73,18 +74,94 @@ body{
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.line{
+    position: relative;
+    top: 50px;
+    height: 10px;
+    width: 490px;
+    color: white;
+    background-color: white;
+}
+p{
+    width: 450px;
+    display: none;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    font-family: Gagalin;
+    font-size: 42px;
+    z-index: 112;
+    color: white;
+    text-align: left;
+
+}
+
 h1{
-    font-size: 90px;
+    animation: blur 1s ease-out;
+    animation-delay: 300ms;
+    font-size: 106px;
 }
 h2{
-    font-size: 69px;
+    font-size: 75px;
+    animation: blur 1s ease-out;
+    animation-delay: 500ms;
 }
 h3{
-    font-size: 58px;
+    font-size: 64px;
+    animation: blur 1s ease-out;
+    animation-delay: 600ms;
 }
 h4{
-    font-size: 55px;
+    font-size: 63px;
+    animation: blur 1s ease-out;
+    animation-delay: 800ms;
 }
 h5{
-    font-size: 48px;
+    font-size: 54px;
+    animation: blur 1s ease-out;
+    animation-delay: 1s;
 }
+img{
+    position: absolute;
+    z-index: 107;
+    padding: 10px 10px 10px 40px;
+    height: 1000px;
+    width: 1800px;
+}
+video{
+    z-index: 106;
+    padding: 10px 10px 10px 40px;
+    height: 1000px;
+    width: 1800px;
+}
+
+h1:hover~.p1{
+    display: flex;
+    animation: blur .5s;
+}
+
+
+@keyframes blur {
+    from {
+        text-shadow:
+        0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    }
+  }
