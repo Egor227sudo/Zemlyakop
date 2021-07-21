@@ -210,13 +210,16 @@ h5{
     position: relative;
     text-align: center;
     top: 25px;
-    right: 0;
-    left: 0;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 101;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #FFFFFF;
 }
 .line{
+    display: none;
+}
+p{
     display: none;
 }
 
