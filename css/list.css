@@ -25,17 +25,18 @@ body{
     background: #111;
 }
 .title{
+    display:none;
     position: relative;
     top: 0px;
     padding-top: 25px;
     right: 30px;
     z-index: 101;
-    display: inline-block;
     font-family: Gagalin;
     font-style: normal;
     font-weight: normal;
     cursor: pointer;
     color: #FFFFFF;
+    display: inline-block;
 
     /* non select */
     -webkit-touch-callout: none;
@@ -77,7 +78,7 @@ body{
 
 .line{
     position: relative;
-    top: 50px;
+    top: 30px;
     height: 10px;
     width: 490px;
     color: white;
@@ -87,10 +88,10 @@ p{
     width: 450px;
     display: none;
     position: relative;
-    top: 100px;
+    top: 60px;
     left: 20px;
     font-family: Gagalin;
-    font-size: 42px;
+    font-size: 38px;
     z-index: 112;
     color: white;
     text-align: left;
@@ -98,70 +99,86 @@ p{
 }
 
 h1{
-    animation: blur 1s ease-out;
-    animation-delay: 300ms;
     font-size: 106px;
+    animation: blur .75s ease-out;
+    animation-delay: 300ms;
 }
 h2{
     font-size: 75px;
-    animation: blur 1s ease-out;
+    animation: blur .75s ease-out;
     animation-delay: 500ms;
 }
 h3{
     font-size: 64px;
-    animation: blur 1s ease-out;
+    animation: blur .75s ease-out;
     animation-delay: 600ms;
 }
 h4{
     font-size: 63px;
-    animation: blur 1s ease-out;
+    animation: blur .75s ease-out;
     animation-delay: 800ms;
 }
 h5{
     font-size: 54px;
-    animation: blur 1s ease-out;
+    animation: blur .75s ease-out;
     animation-delay: 1s;
 }
 img{
     position: absolute;
     z-index: 107;
     padding: 10px 10px 10px 40px;
-    height: 1000px;
-    width: 1800px;
+    height: 750px;
+    width: 1370px;
 }
 video{
     z-index: 106;
     padding: 10px 10px 10px 40px;
-    height: 1000px;
-    width: 1800px;
+    height: 750px;
+    width: 1350px;
 }
 
 h1:hover~.p1{
     display: flex;
-    animation: blur .5s;
+    animation: blur .5s ease-out;
+}
+
+h2:hover~.p2{
+    display: flex;
+    animation: blur .5s ease-out;
+}
+
+h3:hover~.p3{
+    display: flex;
+    animation: blur .5s ease-out;
+}
+
+h4:hover~.p4{
+    display: flex;
+    animation: blur .5s ease-out;
+}
+
+h5:hover~.p5{
+    display: flex;
+    animation: blur .5s ease-out;
 }
 
 
 @keyframes blur {
-    from {
-        text-shadow:
-        0px 0px 10px #fff,
-        0px 0px 10px #fff, 
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 50px #fff,
-        0px 0px 50px #fff,
-        0px 0px 50px #7B96B8,
-        0px 0px 150px #7B96B8,
-        0px 10px 100px #7B96B8,
-        0px 10px 100px #7B96B8,
-        0px 10px 100px #7B96B8,
-        0px 10px 100px #7B96B8,
-        0px -10px 100px #7B96B8,
-        0px -10px 100px #7B96B8;
+    from{
+        filter: blur(40px);
     }
-  }
+    to{
+        filter: blur(0px);
+    }
+}   
+@media (max-width: 700px){
+    video{
+        display: none;
+    }
+    body{
+        background: #111;
+    }
+    img{
+        display: none;
+    }
+}
