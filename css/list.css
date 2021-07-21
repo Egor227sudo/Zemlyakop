@@ -192,30 +192,32 @@ h2{
     animation-delay: 500ms;
 }
 h3{
-    font-size: 50px;
+    font-size: 48px;
     animation: blur .75s ease-out;
     animation-delay: 600ms;
 }
 h4{
-    font-size: 45px;
+    font-size: 42px;
     animation: blur .75s ease-out;
     animation-delay: 800ms;
 }
 h5{
-    font-size: 45px;
+    font-size: 37px;
     animation: blur .75s ease-out;
     animation-delay: 1s;
 }
 .title{
     position: relative;
+    text-align: center;
     top: 25px;
+    right: 0;
+    left: 0;
     z-index: 101;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: normal;
     color: #FFFFFF;
-    display: inline-block;
-    text-align: center
+}
+.line{
+    display: none;
 }
 
 }
