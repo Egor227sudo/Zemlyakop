@@ -186,34 +186,49 @@ h5:hover~.p5{
     }
 
     h1{
-    font-size: 60px;
-    animation: blur .75s ease-out;
-    animation-delay: 300ms;
+        font-size: 60px;
+        animation: blur .75s ease-out;
+        animation-delay: 300ms;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     h2{
         font-size: 55px;
         animation: blur .75s ease-out;
         animation-delay: 500ms;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     h3{
         font-size: 48px;
         animation: blur .75s ease-out;
         animation-delay: 600ms;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     h4{
         font-size: 42px;
         animation: blur .75s ease-out;
         animation-delay: 800ms;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     h5{
         font-size: 37px;
         animation: blur .75s ease-out;
         animation-delay: 1s;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .title{
         position: relative;
-        text-align: center;
         top: 25px;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         z-index: 101;
