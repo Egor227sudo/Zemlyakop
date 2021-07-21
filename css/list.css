@@ -181,4 +181,41 @@ h5:hover~.p5{
     img{
         display: none;
     }
+    h1{
+    font-size: 60px;
+    animation: blur .75s ease-out;
+    animation-delay: 300ms;
+}
+h2{
+    font-size: 55px;
+    animation: blur .75s ease-out;
+    animation-delay: 500ms;
+}
+h3{
+    font-size: 50px;
+    animation: blur .75s ease-out;
+    animation-delay: 600ms;
+}
+h4{
+    font-size: 45px;
+    animation: blur .75s ease-out;
+    animation-delay: 800ms;
+}
+h5{
+    font-size: 45px;
+    animation: blur .75s ease-out;
+    animation-delay: 1s;
+}
+.title{
+    position: relative;
+    top: 25px;
+    z-index: 101;
+    font-family: Gagalin;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: inline-block;
+    text-align: center
+}
+
 }
